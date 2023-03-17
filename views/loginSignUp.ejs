@@ -1,0 +1,45 @@
+<link href="/Css/loginSignup.css" rel="stylesheet" type="text/css"/>
+<div id="loginOrSignupRoot">
+    <div class="logoDivPeople">
+    <img src="/assets/zoho6.png"/>
+</div>
+    <div id="loginOrSignupContainer">
+
+        <div class="login">
+            <h1 class="signInUpText">Sign Up</h1>
+            <div class="inputBox">
+                <input type="email" class="email" required/>
+                <span>Email</span>
+                <i></i>
+              
+            </div>
+            <p class="errorMsg errorMsgUserName">please fill the username</p>
+            <div class="inputBox">
+                <input type="password" class="password" required/>
+                <span>Password</span>
+                <i></i>
+              
+            </div>
+            <p class="errorMsg errorMsgPassword">please fill the password</p>
+            <div class="inputBox repeatPasswordInputBox">
+                <select onchange="setRole(this.value)" id="role" class="repeatPassword">
+                    <option  hidden selected>Select Role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                </select>
+                <i></i>
+                
+            </div>
+            <p class="errorMsg errorMsgRepeatPassword">please fill the repeat password</p>
+<input type="button" id="loginBtn" value="Create an account" onclick="SignUpCheck()"/>
+<div class="goSignUp">
+    <span class="changeDisplaytext">Already have a account?</span>
+    <p onclick="createSignIn()" class="changeSignUpBtnText">SignIn</p>
+</div>
+        </div>
+    </div>
+</div>
+<script>
+  
+</script>
+<script src="/Js/script.js"></script>

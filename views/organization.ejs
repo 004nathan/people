@@ -1,0 +1,71 @@
+
+<div class="organizationAddEmployeeFormContainer">
+    <div class="formHeading">
+        <i class="fa-solid fa-chevron-left arrowLeft" id="arrowLeft"></i><p>Add Employee</p>
+    </div> 
+    <h3 style="margin-left: 2vw;">Employee information</h3>
+    <form method="post" action="admin?company=bala&id=6" class="formContainer">
+        <div   class="formBottomDiv">
+            <label>Employee ID</label>
+            <input type="text" id="Employee ID" name="EmployeeID" value="" required/></div>
+        <div class="formBottomDiv">
+            <label>First Name</label><input type="text" id="First Name" name="firstName"  required/></div>
+        <div class="formBottomDiv">
+            <label>Last Name</label><input type="text" id="Last Name" name="lastName"  required/></div>
+        <div class="formBottomDiv" >
+            <label>Email address</label><input type="text" id="Email address" name="companyEmail"  required/></div>
+        <div class="formBottomDiv">
+            <label>Role</label>
+            <select id="role" name="role"  required>
+                <option  hidden selected>Select</option>
+                <option value="Male">HR</option>
+                <option value="Female">Team member</option>
+            </select>
+        </div>
+        <div class="formBottomDiv">
+            <label>Date of Joining
+            </label><input type="date" id="Date of Joining" name="dateOfjoin"  required/></div>
+        <div class="formBottomDiv">
+            <label>Date of Birth
+            </label><input type="date" id="Date of Birth" name="dob"  required/></div>
+        <div class="formBottomDiv">
+            <label>Gender </label>
+            <select id="genderList" name="gender"  required>
+                <option  hidden selected>Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+            <div class="formBottomDiv">
+                <label>Marial Status</label>
+                <select id="marialStatus" name="marialStatus"  required>
+                    <option  hidden selected>Select</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                </select>
+            </div>
+                <div class="formBottomDiv">
+                    <label>FatherName</label><input type="text" id="FatherName" name="fatherName" /></div>
+                    <div class="formBottomDiv">
+                        <label>Address</label><textarea type="text" id="Address" rows="8" name="address" ></textarea></div>
+                        <div class="formBottomDiv">
+                            <label>About me</label><input type="text" id="About me" name="about" /></div>
+                            <div class="formBottomDiv" id="formBottomDivButton">
+                                <button class="employeeFormDetailsFormBtn" type="submit" name="submitBtn" onclick="addEmployee()">Submit</button> 
+                                <button class="employeeFormDetailsFormBtn" id="cancelBtn" type="reset">Cancel</button> 
+                            </div>
+                         
+    </form>
+   
+</div>  
+<script>
+    $('#arrowLeft').click(function(){
+    $(".DashBoard").load('/users');
+    function addEmployee(){
+        alert('ytghj')
+        $(".DashBoard").load('/users');
+    }
+})
+</script>
+<!-- <script src="./Js/script.js"></script> -->

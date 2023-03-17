@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+   height: 100vh;
+   width: 100vw; 
+}
+#loginOrSignupRoot{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+   border-right: 2px solid #f1f1f1;
+   background-color: #f1f1f1;
+}
+.logoDivPeople{
+    position: relative;
+    width:28vw;
+    height:55vh;
+}
+.logoDivPeople img{
+    height: 40vh;
+    margin-top: 8vh;
+}
+#loginOrSignupContainer{
+    position: relative;
+    width:28vw;
+    height:55vh;
+    background: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius:1vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.icon_div{
+    height: 2vh;
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin-top: 1vh;
+}
+h1{
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+.login{
+    inset: 1vh;
+    width: 28vw;
+    height: 50vh;
+    z-index: 2;
+    padding:50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.inputBox{
+    position:relative;
+    margin-top: 3vh;
+width: 25vw;
+}
+.inputBox input,.inputBox select{
+    position: relative;
+    width:100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index:10;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding:20px 10px 10px;
+    pointer-events: none;
+    color: #000004;
+   transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+font-size: 0.75em;
+transform: translateY(-32px);
+}
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:0.1vh;
+    background-color: #5A698F;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.goSignUp{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.goSignUp span,.goSignUp p{
+    margin:2vh 0;
+    font-size: 1em;
+    color: #c5c4c4;
+}
+.goSignUp p{
+    color: #159AFF;
+}
+.goSignUp p{
+    cursor: pointer;
+}
+#loginBtn{
+    border: none;
+    outline: none;
+    padding: 13px 27px;
+    background-color: #159AFF;
+    color: #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 2px;
+    margin-top:3vh;
+    width:100%;
+    letter-spacing: 0.1em;
+}
+#loginBtn:hover{
+    border: none;
+    outline: none;
+    padding: 13px 27px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 2px;
+    margin-top:3vh;
+    width:100%;
+    letter-spacing: 0.1em;
+}
+.errorMsg{
+    margin-top: 1vh;
+    color: #FC4747;
+}
